@@ -1,0 +1,6 @@
+<header class="bar bar-nav">
+	<a *ngIf="left" class="icon {{left.icon}} pull-left open-panel"></a>
+	<h1 *ngIf="!showSearch" class="title">{{title}}</h1>
+    <div *ngIf="showSearch" class="text-center">搜索</div>
+	<a *ngIf="right" class="icon {{right.icon}} pull-right open-panel"></a>
+</header>

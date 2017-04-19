@@ -1,0 +1,8 @@
+<div [class.weui-actionsheet_toggle]="show" class="weui-actionsheet" id="weui-actionsheet">
+    <div  class="weui-actionsheet__menu">
+      <div *ngFor="let x of menus" class="weui-actionsheet__cell">{{x}}</div>
+    </div>
+    <div class="weui-actionsheet__action">
+      <div (click)="show = false" class="weui-actionsheet__cell" id="actionsheet_cancel">取消</div>
+    </div>
+  </div>

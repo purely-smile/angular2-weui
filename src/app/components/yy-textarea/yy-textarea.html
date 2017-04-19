@@ -1,0 +1,18 @@
+<div class="weui-cell">
+  <div class="weui-cell__bd weui_cell_primary">
+    <textarea
+    class="weui-textarea"
+    [attr.placeholder]="placeholder"
+    [attr.autocomplete]="autocomplete"
+    [attr.autocapitalize]="autocapitalize"
+    [attr.autocorrect]="spellcheck"
+    [attr.maxlength]="max"
+    [style.height.px] = "height"
+    [name]="name"
+    [rows]="rows"
+    [cols]="cols"
+    [(ngModel)]="value"
+    ></textarea>
+    <div class="weui-textarea-counter" [hidden]="!showCounter"><span>{{value.length}}</span>/{{max}}</div>
+  </div>
+</div>

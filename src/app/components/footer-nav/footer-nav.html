@@ -1,0 +1,6 @@
+<nav class="bar bar-tab">
+	<a *ngFor="let x of navs" class="tab-item active" href="{{x.link}}">
+		<span class="icon {{x.icon}}"></span>
+		<span class="tab-label">{{x.name}}</span>
+	</a>
+</nav>

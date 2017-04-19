@@ -1,0 +1,22 @@
+<div class="card-container">
+    <yy-preview></yy-preview>
+    <yy-grid [menus]="[1,2]"></yy-grid>
+    <yy-gallery></yy-gallery>
+    <yy-uploader title="上传图片"></yy-uploader>
+    <yy-cell [isLink]=true title="列表标题" value="列表说明"></yy-cell>
+    <yy-button type="primary" (click)="showactionSheet = !showactionSheet" text="打开actionsheet"></yy-button>
+    <yy-actionsheet [menus]="[1,2,3]" [show]="showactionSheet"></yy-actionsheet>
+    <yy-group title="容器标题">
+        <yy-input title="用户名" name='name' placeholder='123'></yy-input>
+    </yy-group>
+    <yy-selector [options]="[1,2,3]" title="下拉框"></yy-selector>
+    <yy-checkbox title="复选框"></yy-checkbox>
+    <yy-radio title="单选框"></yy-radio>
+    <yy-switch title="切换switch"></yy-switch>
+    <yy-input title="用户名" name='name' placeholder='123'></yy-input>
+    <yy-button type="warn" [disable]="true" text="你好"></yy-button>
+    <yy-button type="primary" text="你好"></yy-button>
+    <yy-button [mini]="true" type="primary" text="你好"></yy-button>
+    <yy-button [plain]="true" type="primary" text="你好"></yy-button>
+    <yy-textarea></yy-textarea>
+</div>
