@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'yy-radio',
+    selector: 'we-radio',
     templateUrl: './radio.html'
 })
 export class YYradioComponent {

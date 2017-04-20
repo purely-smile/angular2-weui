@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'yy-switch',
+    selector: 'we-switch',
     templateUrl: './switch.html'
 })
 export class YYswitchComponent {

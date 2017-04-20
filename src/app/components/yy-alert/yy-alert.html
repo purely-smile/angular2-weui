@@ -1,0 +1,11 @@
+<div *ngIf="showAlert" id="dialog1">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <div class="weui-dialog__hd"><strong class="weui-dialog__title">{{title}}</strong></div>
+        <div class="weui-dialog__bd">{{body}}</div>
+        <div class="weui-dialog__ft">
+            <a (click)="btnActive('no')" href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">{{cancelText}}</a>
+            <a (click)="btnActive('yes')" href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">{{confirmText}}</a>
+        </div>
+    </div>
+</div>

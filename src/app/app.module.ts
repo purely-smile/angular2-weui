@@ -15,24 +15,7 @@ import {
   PreloadAllModules
 } from '@angular/router';
 
-import {
-  FooterNavComponent,
-  HeaderNavComponent,
-  YYbuttonComponent,
-  YYtextareaComponent,
-  YYinputComponent,
-  YYswitchComponent,
-  YYradioComponent,
-  YYcheckboxComponent,
-  YYselectorComponent,
-  YYgroupComponent,
-  YYactionsheetComponent,
-  YYcellComponent,
-  YYuploaderComponent,
-  YYgalleryComponent,
-  YYgridComponent,
-  YYpreviewComponent
-} from './components';
+import { WeuiModule } from './weui.index';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -74,28 +57,13 @@ type StoreType = {
     HomeComponent,
     NoContentComponent,
     XLargeDirective,
-    FooterNavComponent,
-    HeaderNavComponent,
-    YYbuttonComponent,
-    YYtextareaComponent,
-    YYinputComponent,
-    YYswitchComponent,
-    YYradioComponent,
-    YYcheckboxComponent,
-    YYselectorComponent,
-    YYgroupComponent,
-    YYactionsheetComponent,
-    YYcellComponent,
-    YYuploaderComponent,
-    YYgalleryComponent,
-    YYgridComponent,
-    YYpreviewComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
+    WeuiModule
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

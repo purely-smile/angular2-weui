@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'yy-uploader',
+    selector: 'we-uploader',
     templateUrl: './uploader.html'
 })
 

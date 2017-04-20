@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'yy-checkbox',
+    selector: 'we-checkbox',
     templateUrl: './checkbox.html'
 })
 export class YYcheckboxComponent {

@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'yy-textarea',
+    selector: 'we-textarea',
     templateUrl: './yy-textarea.html',
 })
 

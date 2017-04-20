@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'yy-actionsheet',
+    selector: 'we-actionsheet',
     templateUrl: './actionsheet.html'
 })
 

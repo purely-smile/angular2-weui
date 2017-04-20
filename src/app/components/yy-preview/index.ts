@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'yy-preview',
+    selector: 'we-preview',
     templateUrl: './preview.html'
 })
 

@@ -43,3 +43,9 @@ export * from './yy-grid';
 
 // 表单预览 preview
 export * from './yy-preview';
+
+// toast
+export * from './yy-toast-wrap';
+
+// alert
+export * from './yy-alert';

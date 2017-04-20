@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'yy-grid',
+    selector: 'we-grid',
     templateUrl: './grid.html'
 })
 

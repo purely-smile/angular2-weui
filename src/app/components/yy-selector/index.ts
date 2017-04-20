@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'yy-selector',
+    selector: 'we-selector',
     templateUrl: './selector.html'
 })
 

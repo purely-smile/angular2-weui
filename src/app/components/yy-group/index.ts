@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'yy-group',
+    selector: 'we-group',
     templateUrl: './group.html'
 })
 
