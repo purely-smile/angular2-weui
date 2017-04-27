@@ -17,11 +17,12 @@ export class HomeComponent implements OnInit {
   ) { }
 
   public ngOnInit() {
-    this.toast.alert({ title: '11111', body: '22222' })
-      .subscribe((val) => {
-        console.log(val);
-      }, (err) => {
-        console.log(err);
-      });
+    this.toast.showActionSheet([
+      {
+        name: 'test01',
+        action: '123'
+      }
+    ])
+      .subscribe((val) => console.log(val));
   }
 }

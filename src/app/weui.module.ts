@@ -19,14 +19,19 @@ import {
     YYgridComponent,
     YYpreviewComponent,
     YYToastWrapComponent,
-    YYAlertComponent
+    YYAlertComponent,
+    WeActionSheetComponent
 } from './components';
+
+import { ClickStopPropagationDirective } from './directives';
 
 import {
     ToastService
 } from './services';
 
 const allComponent = [
+    ClickStopPropagationDirective,
+    WeActionSheetComponent,
     FooterNavComponent,
     HeaderNavComponent,
     YYbuttonComponent,

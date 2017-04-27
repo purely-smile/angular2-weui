@@ -1,14 +1,11 @@
-<div class="weui-cell weui-cell_vcode">
-  <div class="weui-cell__hd">
-    <label class="weui-label">{{title}}</label>
-  </div>
-  <div class="weui-cell__bd">
-    <input
-    class="weui-input"
-    [readonly]="readonly"
-    [type]="type"
-    [placeholder]="placeholder"
-    [attr.autocomplete]="autocomplete" [attr.autocapitalize]="autocapitalize" [attr.autocorrect]="autocorrect" [attr.spellcheck]="spellcheck"
-    >
-  </div>
+<div class="weui-cell">
+    <div *ngIf="title" class="weui-cell__hd">
+        <label class="weui-label">{{title}}</label>
+    </div>
+    <div class="weui-cell__bd">
+        <input [(ngModel)]="value" class="weui-input" [readonly]="readonly" [type]="type" [placeholder]="placeholder" [attr.autocomplete]="autocomplete" [attr.autocapitalize]="autocapitalize" [attr.autocorrect]="autocorrect" [attr.spellcheck]="spellcheck">
+    </div>
+    <div class="weui-cell__ft">
+        <ng-content></ng-content>
+    </div>
 </div>

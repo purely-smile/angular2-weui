@@ -1,0 +1,9 @@
+<div *ngIf="showSheet" class="we-action-sheet">
+    <div class="weui-mask_transparent actionsheet__mask weui-mask"></div>
+    <div stop-propagation class="weui-actionsheet weui-actionsheet_toggle" id="weui-actionsheet">
+        <div class="weui-actionsheet__menu">
+            <div *ngFor="let x of list" class="weui-actionsheet__cell" (click)="menuAction(x.action)">{{x.name}}</div>
+
+        </div>
+    </div>
+</div>

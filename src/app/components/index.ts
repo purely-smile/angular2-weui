@@ -49,3 +49,6 @@ export * from './yy-toast-wrap';
 
 // alert
 export * from './yy-alert';
+
+// action sheet
+export * from './we-action-sheet';

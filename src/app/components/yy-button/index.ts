@@ -6,8 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 
 export class YYbuttonComponent implements OnInit {
-    @Input() public text: string = '请输入内容';
-    @Input() public type: string = 'default';
+    /**
+     * @type primary default warn
+     */
+    @Input() public type: string = 'primary';
     @Input() public disable: boolean = false;
     @Input() public mini: boolean = false;
     @Input() public plain: boolean = false;

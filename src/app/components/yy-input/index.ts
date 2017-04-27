@@ -1,12 +1,20 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
     selector: 'we-input',
     templateUrl: './input.html'
 })
 export class YYinputComponent {
+    @Input() public set value(val) {
+        this.currentValue = val;
+        this.valueChange.emit(val);
+    }
+    public get value() {
+        return this.currentValue;
+    }
+    @Output() public valueChange: EventEmitter<any> = new EventEmitter();
     @Input() public title: string = '';
-    @Input() public placeholder: string = '请输入内容';
+    @Input() public placeholder: string = '';
     @Input() public name: string;
     @Input() public readonly: boolean = false;
     @Input() public inlineDesc: string;
@@ -21,4 +29,5 @@ export class YYinputComponent {
     @Input() public autocapitalize: string = 'off';
     @Input() public autocorrect: string = 'off';
     @Input() public spellcheck: string = 'false';
+    public currentValue: string;
 }
