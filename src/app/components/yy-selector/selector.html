@@ -1,10 +1,10 @@
 <div class="weui-cell weui-cell_select weui-cell_select-after">
-  <div class="weui-cell__hd">
-    <label for="" class="weui-label">{{title}}</label>
-  </div>
-  <div class="weui-cell__bd">
-    <select class="weui-select" name="select2">
-                <option *ngFor="let x of options" value="1">{{x}}</option>
+    <div class="weui-cell__hd">
+        <label for="" class="weui-label">{{title}}</label>
+    </div>
+    <div class="weui-cell__bd">
+        <select [(ngModel)]="value" class="weui-select" name="select2">
+                <option *ngFor="let x of options;let i = index" [value]="x.value">{{x.name}}</option>
             </select>
-  </div>
+    </div>
 </div>

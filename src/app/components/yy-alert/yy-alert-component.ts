@@ -11,15 +11,18 @@ export class YYAlertComponent implements OnInit {
   public confirmText: string = '确认';
   public cancelText: string = '取消';
   public showAlert: boolean = false;
+  public showInput: boolean = false;
+  public text: string;
   constructor(
     private toast: ToastService
   ) { }
   public ngOnInit() {
     this.toast.alertSub
       .do((config: AlertConfig) => {
-        let { title, body } = config;
+        let { title, body, showInput } = config;
         this.body = body;
         this.title = title;
+        this.showInput = showInput;
         this.showAlert = true;
       })
       .subscribe();
@@ -29,9 +32,10 @@ export class YYAlertComponent implements OnInit {
      * 按钮点击事件
      */
     this.showAlert = false;
+    let { text } = this;
     switch (action) {
       case 'yes':
-        this.toast.btnAlertSub.next(1);
+        this.toast.btnAlertSub.next(text);
         break;
       case 'no':
         this.toast.btnAlertSub.error(0);
